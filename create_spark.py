@@ -45,7 +45,6 @@ spark_salt_conf = {
     ],
     'ext_pillar': [
         {
-            'git': "master https://github.com/oreh-formula/sysconfig-formula.git root=pillar",
             'git': "master https://github.com/wangqiang8511/spark_cluster.git root=pillar"
         }
     ]

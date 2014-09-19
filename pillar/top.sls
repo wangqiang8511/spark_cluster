@@ -2,3 +2,4 @@
   '*':
     - mine
     - java
+    - host
