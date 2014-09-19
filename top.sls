@@ -1,14 +1,14 @@
 base:
   '*':
-    - base
     - sysconfig.dir
     - sysconfig.hostname
     - java
-    - java.env
 
 
 {% for module, role in grains['roles'].iteritems() %}
+  {% if module != 'salt' %}
     - {{module}}
+  {% endif %}
   
   {# spark1 config #}
   {% if module == 'spark1' %}

@@ -1,4 +1,5 @@
 'base':
   '*':
     - mine
+    - host
     - java

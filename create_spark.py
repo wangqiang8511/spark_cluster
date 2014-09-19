@@ -127,6 +127,8 @@ def generate_map_file(cluster_name, number_of_workers, subnet,
 
 def main():
     c = CloudClient(path="/etc/salt/cloud")
+    import salt.loader
+    salt.loader.clouds(c._opts_defaults())
     opts = c.opts
     opts["keep_tmp"] = True
     spark_map = generate_map_file("sparktest", 0, "3-us-east-1a-private")
