@@ -64,8 +64,8 @@ spark_master_minion_conf = {
         "hadoop": {
             "master": "master",
             "set_s3_key": True,
-            "s3_key": "AKIAJ2DWROJKLDMQOFCQ",
-            "s3_secret": "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",
+            "s3_key": s3_key,
+            "s3_secret": s3_secret,
             "data_dir": "/media/ephemeral0/hadoop"
         },
         "spark_env": {
